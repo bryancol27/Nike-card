@@ -79,14 +79,13 @@ section{
 }
 .section_information ul{
     list-style: none;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    text-align: center;
 }
 .section_information ul li{
-    padding: 10px 30px;
+    padding: 10px 20px;
     font-size: 1.5rem;
     text-align: center;
+    display: inline-block;
 }
 
 @media (max-width: 640px){
