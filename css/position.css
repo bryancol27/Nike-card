@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Sedgwick Ave', cursive;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    gap: 20px;
+    width: 800px;
+    background-color: #D6D7C9;
+    position: relative;
+}
+.section_title{
+    font-size: 4rem;
+    width: 70%;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    position: relative;
+    top: -50px;
+}
+.section_log img{
+    width: 10rem;
+    position: relative;
+    right: 730px;
+    top: -40px;
+    z-index: 2;
+}
+.section_log img:hover{
+    width: 120px;
+}
+.section_img{
+    padding: 10px;
+    background: rgba( 255, 255, 255, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.section_img figure img{
+    width: 60rem;
+    transform: rotate(-30deg);
+}
+.section_img figure img:hover{
+    width: 62rem;
+}
+.section_img figure figcaption{
+    text-align: center;
+    font-size: 3rem;
+}
+.section_information{
+    width: 70%;
+    border-radius: 15px;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+}
+.section_information ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.section_information ul li{
+    padding: 10px 30px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+@media (max-width: 640px){
+    section{
+        width: 400px;
+    }
+    .section_img figure img{
+        width: 30rem;
+    }
+    .section_img figure img:hover{
+        width: 35rem;
+    }
+    main{
+        width: 100%;
+        height: 100vh;
+        justify-content: flex-end;
+        align-content: flex-start;
+    }
+    .section_log img{
+        display: block;
+    }
+}
+
